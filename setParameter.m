@@ -4,13 +4,18 @@ param = struct();
 
 switch model_name
     case 'None_ctrl'
-        param.a0E = 0.0075;
+        param.a0E = 0.005;
         param.a0N = 0.005;
-        param.aE = 0.095;
-        param.aN = 0.07;
-        param.K0E = 9;
+        param.aE = 0.2;
+        param.aN = 0.06;
+        param.K0E = 8;
         param.K0N = 16;
+%         param.Kauto = 16;
         param.gamma = 0.002;
+        
+%         param.kact = 1;
+%         param.Etot = 20;
+%         param.kde = 1;
         
     case 'dox_OspF'
         param.a0E = 0.0075;
